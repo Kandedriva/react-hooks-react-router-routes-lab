@@ -2,7 +2,29 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
-  return <div>{/*{code here}*/}</div>;
+  return <div className="navbar">
+   <NavLink
+        to="/"
+        exact>
+        Home
+      </NavLink> <br/>
+      <NavLink
+        to="/movies"
+        exact>
+        Movies
+      </NavLink><br/>
+      <NavLink
+        to="/directors"
+        exact>
+        Directors
+      </NavLink><br/>
+      <NavLink
+        to="/actors"
+        exact>
+        Actors
+      </NavLink>
+  
+  {/*{code here}*/}</div>;
 }
 
 export default NavBar;
